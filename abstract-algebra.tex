@@ -1,0 +1,326 @@
+\documentclass{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{romannum}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{booktabs}
+
+% Counters
+\newcounter{example}
+\newcounter{claim}
+\newcounter{solution}
+\setcounter{secnumdepth}{4}
+
+% Styles
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{claim}
+\newtheorem{claim}{Claim}[section]
+ 
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\newtheorem{theorem}{Theorem}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+% Commands
+
+\newcommand\Example{%
+  \stepcounter{example}%
+  \textbf{Example \theexample.}~%
+  \setcounter{solution}{0}%
+}
+
+% The Solution is used when only
+% 1 solution exists
+\newcommand\TheSolution{%
+  \textbf{Solution:}\\%
+}
+
+% If more than 1 solution exists to a
+% specific problem/ example use 
+% a solution.
+\newcommand\ASolution{%
+  \stepcounter{solution}%
+  \textbf{Solution \thesolution:}\\%
+}
+
+
+\title{Abstract Structures 333}
+
+\begin{document}
+
+\maketitle
+
+% Flush left to keep starting point
+% of all lines flush (Design pref.)
+\begin{flushleft}
+
+\section{Equivalence Relations}
+\begin{definition}{Equivalence Relation}
+
+An equivalence relation, denoted by the symbol \char`\~ , on a set $\Huge S$ is a set $\Huge R$
+\footnote{Need not be unique}
+of ordered pairs (a, b) $\in$ S x S such that:
+\begin{enumerate}
+  \item (a, a) $\in$ R $\forall$ a $\in$ S
+  \item (a, b) $\in$ R implies (b, a) $\in$ R $\forall$ a, b $\in$ S
+  \item (a, b), (b, c) $\in$ R implies (a, c) $\in$ R $\forall$ a, b, c $\in$ S
+\end{enumerate}
+\end{definition}
+
+We are concerned with \textbf{what partition is R imposing on S}
+\newline
+\newline
+
+\Example Define $\mathbb{Z}$ in the following way\\ $\newline$ Fix n $\in$ $\mathbb{Z+}$ $\newline$\\ We say a is congruent $\equiv$ to b (mod n) or $a \equiv \text{b (mod n)}$ iff n $\mid$ (a-b)
+
+Show that the example above is an equivalence relation
+\newline \newline
+\TheSolution 
+\begin{proof}{}
+We must prove the following 3 properties
+\begin{enumerate}
+  \item Reflexive [ ($\romannum{1}$) in the def of ER]
+  \begin{itemize}
+     \item Thought of as: An element a is always related (\char`\~) to itself.
+   \end{itemize}
+   We are trying to prove that $a \equiv\text{a (mod n)}$. We can start by rewriting this congruence as $n \mid (a-a)$ by def of congruence. This leaves us with $n \mid (0)$ which is true for all $n > 0$. Since n be def is fixed in $\mathbb{Z+}$, this congruence will always hold.
+  \item Symmetric [ ($\romannum{2}$) in the def of ER]
+    \begin{itemize}
+     \item Thought of as: Given $(a, b)$ is valid, we can show $(b, c)$ is valid.
+    \end{itemize}
+   Since we are given $(a, b)$ is valid, we can write $a \equiv \text{b (mod n)}$ or $n \mid (a-b)$. We must show that $b \equiv a (mod n)$ or $n \mid (b-a)$.
+   We can rewrite $n \mid (b-a)$ as $-1 * n \mid (a-b)$. Since we know $n \mid (a-b)$ from out given, we know that this division holds true and therefore $n \mid (b-a)$ as well. 
+  \item Transitive [ ($\romannum{3}$) in the def of ER]
+    \begin{itemize}
+     \item Thought of as: Given $a \char`\~ b$ and $b \char`\~ c$ we must show $a \char`\~ c$.
+   \end{itemize}
+   We can write the congruence as 2 linear equation.
+   \begin{itemize}
+     \item $nk = a - b$
+     \item $nl = a - c$
+   \end{itemize}
+   Rearranging we get: $n(k+l) = a - c$ which can be rewritten as $n \mid (a-c)$
+\end{enumerate}
+\end{proof}
+Now that we have proved that a congruence is an $ER$ on $S = \mathbb{Z}$ we would like to see what affect it has on $\mathbb{Z}$. $ie:$ What is $a \char`\~ b$ / what partition does it impose.
+\newline
+\newline
+\Example Take $n = 5$, given the following values for $a$ which values in $\mathbb{Z}$ satisfy the congruence $a \equiv \text{b (mod n)}$ and is the resulting set equal to $\mathbb{Z}$?
+\begin{itemize}
+     \item $a = 0$
+     \item $a = 1$
+     \item $a = 2$
+\end{itemize}
+\TheSolution 
+\begin{itemize}
+     \item $\{\pm{0}, \pm{5}, \pm{10}\dots\}$
+     \item $\{\pm{1}, \pm{6}, \pm{5k+1}\dots\}$
+     \item $\{\pm{2}, \pm{7}, \pm{5k+2}\dots\}$
+\end{itemize}
+No sets equal $\mathbb{Z}$
+\newline
+\newline
+We can see that it appears that a congruence will always split the set $\mathbb{Z}$ into n partitions.
+\newline
+\begin{definition}{Partition of a set}
+
+A partition of a set S is a collection of \textbf{non-empty, disjoint} subsets $\{s_{0}, s_{1}, \dots\}$ such that (st) $\bigcup\limits_{i=1}^{\infty} S_{i} = S$
+
+\end{definition}
+\begin{theorem}{The equivalence classes of a set S under \char`\~ form a partition of S}
+\begin{proof}{
+We need to show that given \char`\~, we are left with a collection of \textbf{disjoint} subsets who's union is S.
+
+Let a \char`\~ S. We know a is in  its own set because a \char`\~ a. So $\forall$ a $\in$ S the set containing a is \textbf{non-empty}. If we do this for all a $\in$ S then the union of those sets is S. So we need only show that these sets are \textbf{disjoint}.
+}
+\end{proof}
+\end{theorem}
+
+\Example Let S = $\mathbb{Z}x\mathbb{Z}$ [(a, b) a,b $\in$ $\mathbb{Z}$]
+Define $\char`\~$ on S by (a, b) $\char`\~$ (c, d) iff ad = bc
+\begin{enumerate}
+  \item Prove $\char`\~$ is an ER
+  \item What partition of $\mathbb{R}x\mathbb{R}$ does this impose
+\end{enumerate}
+\TheSolution 
+\begin{proof}
+If ER, 3 properties must hold:
+\begin{enumerate}
+  \item Reflexive: (a, b) $\char`\~$ (a, b) $\Longrightarrow$ ab = ab which is true.
+  \item Symmetric: Given (a, b) $\char`\~$ (c, d) we can show (c, d) $\char`\~$ (a, b). (a, b) $\char`\~$ (c, d) $\Longrightarrow$ ad = bc, (c, d) $\char`\~$ (a, b) $\Longrightarrow$ cb = da. Since we are in the realm of $\mathbb{R}$ we can rearrange to bc = ad which is equal to ad = bc.
+  \item Transitive: We must show that if (a, b) $\char`\~$ (c, d) and (c, d) $\char`\~$ (e, f) then (a, b) $\char`\~$ (e, f). We can write it as follows ad = bc and cf = de  the af = be.
+  We can write 
+  \begin{gather*} 
+  adcf = bcde   \\
+  ace = bce     \\
+  af = be       \\
+  \end{gather*} 
+\end{enumerate}
+To find the partition we may start by plugging in random values.\\
+\begin{gather*} 
+(1, 1)  \\
+1d = 1c \\
+d = c   \\
+= \{(1, 1), (2, 2), \dots, (n, n)\}
+\end{gather*}\\
+\begin{gather*} 
+(1, 2)\\
+d = 2c\\
+= \{(1, 2), (2, 4), \dots, (n, 2n)\}\\
+\vdots\\
+\infty
+\end{gather*} 
+This partition forms all rational numbers. The first set represents $\frac{1}{1}$ or $1$, the second represents $\frac{1}{2}$ $\dots$ $\infty$
+\end{proof}
+\Example Let S = $\mathbb{R}-\{0\}$\\Define a $\char`\~ b \leftrightarrow ab > 0$\\What partition does that make on $\mathbb{R}$\newline\\
+\TheSolution By plugging in we see we get 2 sets.
+\begin{enumerate}
+  \item \{1, 2, \dots, n\} = All positive integers
+  \item \{-n, -n-1, \dots, -1\} = All negative integers
+\end{enumerate}
+\begin{theorem}{Division Algorithm}\\
+Let D $\in$ $\mathbb{Z+}$, a $\in$ $\mathbb{Z}$, $\exists !$q, r s.t. $a = dq + r$ when $0 < r \leq d$
+\end{theorem}
+\Example a = 100, d = 7\newline\\
+\TheSolution
+\begin{gather*} 
+100 = 7q + r = 7(14) + 2\\
+7 = 2q + r = 2(3) + 1   \\
+2 = 1q + r = 1(2) + 0   \\
+\end{gather*} 
+So, 1 would be the GCD.
+
+\section{Chapter 1: Groups}
+\begin{definition}{Binary Operation}
+We define a binary operation on set S is a function from SxS $\longrightarrow$ S\\
+ie: Takes a pair of elements in S and sends them to another element in S
+\end{definition}
+\Example Let S = $\mathbb{Z}$, with bin-op (+)\\
+a + b = c   \\
+3 + 5 = 8   \\
+3 $\in$ $\mathbb{Z}$, 5 $\in$ $\mathbb{Z}$, 8 $\in$ $\mathbb{Z}$.
+
+\begin{definition}{Let S be a set w/ bin-op $*$\footnote{$*$ denotes any bin-op}}\\
+If $\forall$ a, b $\in$ S, a + b $\in$ S we say S is closed (under $*$)
+\end{definition}
+\Example                            \\
+($M_{22}$, $\cdot$) is closed       \\
+($\mathbb{R}$, $\div$) is not closed\\
+\begin{definition}{Let G be a set closed under bin-op *}
+G is a group if the following hold:
+\begin{enumerate}
+  \item Associative: $\forall$ a, b, c $\in$ G we have $(a * b) * c = a * (b * c)$
+  \item $\exists$ an Identity in G s.t. $\forall$ a $\in$ G we have $(e * a) = (a * e) = a$
+  \item ($\forall$ a $\in$ G)$\exists a^{-1}$ s.t. $a * a\prime = a^{-1} * a = e$
+\end{enumerate}
+\end{definition}
+\Example $\mathbb{Z}_{n}$ = the group \{0, 1, 2, $\dots$, n-1\} under addition mod n.\\
+What is addition mod n?\newline \\
+For a, b $\in \mathbb{Z}_{n}$:  \\
+if $a + b < n$, $a + b = a + b$ \\
+if $a + b \geq n$, $a + b = a + b - n$\newline\\
+
+\begin{enumerate}
+  \item Associative: We are dealing with integers so associativity holds.
+  \item $\exists$ an Identity: The identity is 0 ($e = 0$) 
+  \item ($\forall$ a $\in$ G)$\exists a^{-1}$: The inverse is $n - a$
+\end{enumerate}
+
+\paragraph{Common Groups}
+\begin{itemize}
+  \item ($\mathbb{Z}$, +)
+  \item ($\mathbb{R}$, +)
+  \item ($\mathbb{C}$, +)
+  \item ($GL_{2R}$, *)
+\end{itemize}
+
+\begin{proof} of  ($GL_{2R}$, *)\\
+  We know from linear algebra that $det(AB) = det(A)det(B)$\\
+  We also know that the identity 2x2 matrix is 
+  \[
+M_{2x2}=
+  \begin{bmatrix}
+    1 & 0  \\
+    0 & 1
+  \end{bmatrix}
+\]\\
+Additionally, we are able to inherit associativity from general matrices. 
+This leaves inverse.\\
+We prove inverse as follows:
+\begin{gather*} 
+A^{-1} = \frac{1}{det(A)} 
+\[
+    \begin{bmatrix}
+      d & -b  \\
+      -c & a
+    \end{bmatrix}
+\]
+\end{gather*} 
+\end{proof}
+
+\begin{definition}{Order of a  group}\\
+The order of a group, G, denoted $| G |$ is the number of elements in G as a set\\
+If set G has a finite number of elements we say G is a finite group. If G has an infinite number of elements we say G is an infinite group.
+\end{definition}
+
+\begin{definition}{Abelian Groups}\\
+If a group is commutative, we say it is Abelian. If not, we say its not-Abelian
+\end{definition}
+
+\begin{definition}{Cayley Table}\\
+A cayley table is a way to describe the structure of a finite group.\\
+Properties that may be derived from a cayley table are:
+\begin{itemize}
+  \item If the table is reflect-able, the group is Abelian 
+  \item Every element appears in each row/column
+  \item Easily find the identity (The row/column which entries is equal to the input)
+\end{itemize}
+\end{definition}
+
+\Example Write the Cayley Table for $\mathbb{Z}_{3}$\\
+ \begin{center}
+\setlength\extrarowheight{3pt}
+\begin{tabular}{c | c c c c c}
+    $\mathbb{Z}_{3}$ & 0 & 1 & 2  \\
+    \cline{1-4}
+    0 & 0 & 1 & 2  \\
+    1 & 1 & 2 & 0  \\
+    2 & 2 & 0 & 1  \\
+\end{tabular}
+\end{center}
+
+\Example Write the Cayley Table for $|G|=3$\\
+ \begin{center}
+
+\setlength\extrarowheight{3pt}
+\begin{tabular}{c | c c c c c}
+    $|G|=3$ & e & a & b  \\
+    \cline{1-4}
+    e & e & a & b  \\
+    a & a & b & e  \\
+    b & b & e & a  \\
+\end{tabular}
+\end{center}
+Notice that this the second table above was forced. Meaning, no other configuration of $e,a,b$ could have been entered into the table and the table maintain all group properties.\\\\
+We see from this that there is only 1 group with order 3. Even though we may label that group with different elements, the underlying groups are all the same.
+\begin{claim}{}
+If groups are structurally identical, then, you can find a bijection $\phi$(G_{1}) =  G_{2}
+\end{claim}
+\begin{definition}{Order of an element}\\
+Let G be a group with g $\in$ G. The order of g (referred to as the order of the element) is the smallest positive integer n s.t. $g^{n} = e$ where e is the identify element of G. 
+\end{flushleft}
+\end{document}
