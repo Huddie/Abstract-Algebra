@@ -317,6 +317,51 @@ Properties that may be derived from a cayley table are:
 \end{center}
 Notice that this the second table above was forced. Meaning, no other configuration of $e,a,b$ could have been entered into the table and the table maintain all group properties.\\\\
 We see from this that there is only 1 group with order 3. Even though we may label that group with different elements, the underlying groups are all the same.
+
+\begin{claim}{}
+$\exists$! 2 groups of order 4 ($|G|=4$)
+\end{claim}
+
+\begin{center}
+\setlength\extrarowheight{3pt}
+\begin{tabular}{c | c c c c c c}
+    $\mathbb{Z}_{4}$ & 0 & 1 & 2 & 3  \\
+    \cline{1-5}
+    0 & 0 & 1 & 2 & 3  \\
+    1 & 1 & 2 & 3 & 0 	\\
+    2 & 2 & 3 & 0 & 1	\\
+    3 & 3 & 0 & 1 & 2	\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\setlength\extrarowheight{3pt}
+\begin{tabular}{c | c c c c c c}
+    $\mathbb{Z}_{2x2}$ &(0,0) & (0,1) & (1,0) & (1,1)  \\
+    \cline{1-5}
+    (0,0) & (0,0) & (0,1) & (1,0) & (1,1)  	\\
+    (0,1) & (0,1) & (0,0) & (1,1) & (1,0) 	\\
+    (1,0) & (1,0) & (1,1) & (0,0) & (0,1)		\\
+    (1,1) & (1,1) & (1,0) & (0,1) & (0,0)		\\
+\end{tabular}
+\end{center}\\
+Any other groups of order 4 will have a bijection to either $\mathbb{Z}_{4}$ or $\mathbb{Z}_{2x2}$\\
+Here is an example of one of those:
+
+\Example Let G = \{1, -1, i, -i\} under *\\
+
+\begin{center}
+\setlength\extrarowheight{3pt}
+\begin{tabular}{c | c c c c c c}
+    $\mathbb{G}_{4}$ & 1 & -1 & i & -i  \\
+    \cline{1-5}
+    $1$&$1$&$-1$&$ i$&$-i$   \\
+    $-1$&$-1$&$1$&$-i$&$i$	\\
+    $i$&$i$&$-i$&$-1$& $1$	\\
+    $-i$&$-i$&$i$&$1$&$1$	\\
+\end{tabular}
+\end{center}
+
 \begin{claim}{}
 If groups are structurally identical, then, you can find a bijection $\phi$(G_{1}) =  G_{2}
 \end{claim}
