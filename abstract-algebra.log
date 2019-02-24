@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.31)  20 FEB 2019 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.31)  24 FEB 2019 09:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -333,35 +333,38 @@ l.25 \newtheorem{claim}{Claim}[section]
                                        
 ? s
 OK, entering \scrollmode...
+
+Package amsthm Warning: Unknown theoremstyle `theorem' on input line 30.
+
 \c@theorem=\count108
 (./abstract-algebra.aux)
 \openout1 = `abstract-algebra.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 64.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -370,40 +373,40 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 74.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 75.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 74.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 75.
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 192.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 193.
 
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
  [4]
 
-./abstract-algebra.tex:272: LaTeX Error: Bad math environment delimiter.
+./abstract-algebra.tex:273: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./abstract-algebra.tex:272: Missing \endgroup inserted.
+./abstract-algebra.tex:273: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -411,10 +414,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -423,23 +426,23 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./abstract-algebra.tex:272: LaTeX Error: \begin{gather*} on input line 264 ende
+./abstract-algebra.tex:273: LaTeX Error: \begin{gather*} on input line 265 ende
 d by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./abstract-algebra.tex:272: Missing $ inserted.
+./abstract-algebra.tex:273: Missing $ inserted.
 <inserted text> 
                 $
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -447,10 +450,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -458,10 +461,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -469,35 +472,35 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing \cr inserted.
+./abstract-algebra.tex:273: Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I'm guessing that you meant to end an alignment here.
 
-./abstract-algebra.tex:272: Missing { inserted.
+./abstract-algebra.tex:273: Missing { inserted.
 <inserted text> 
                 {
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-./abstract-algebra.tex:272: Missing { inserted.
+./abstract-algebra.tex:273: Missing { inserted.
 <inserted text> 
                 {
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-./abstract-algebra.tex:272: Extra }, or forgotten $.
+./abstract-algebra.tex:273: Extra }, or forgotten $.
 <recently read> }
                  
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -505,18 +508,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./abstract-algebra.tex:272: Missing $ inserted.
+./abstract-algebra.tex:273: Missing $ inserted.
 <inserted text> 
                 $
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -524,10 +527,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -535,10 +538,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Misplaced alignment tab character &.
+./abstract-algebra.tex:273: Misplaced alignment tab character &.
 \math@cr@@@ ->\ifst@rred \nonumber \fi &
                                         \relax \make@display@tag \ifst@rred ...
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -547,10 +550,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./abstract-algebra.tex:272: Misplaced \cr.
+./abstract-algebra.tex:273: Misplaced \cr.
 \math@cr@@@ ...fi \global \advance \row@ \@ne \cr 
                                                   
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -558,10 +561,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./abstract-algebra.tex:272: Extra }, or forgotten $.
+./abstract-algebra.tex:273: Extra }, or forgotten $.
 \gmeasure@ ...savetaglength@ \crcr #1\math@cr@@@ }
                                                   }\restorecounters@ \if@fle...
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -569,10 +572,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./abstract-algebra.tex:272: Extra }, or forgotten $.
+./abstract-algebra.tex:273: Extra }, or forgotten $.
 \gmeasure@ ...avetaglength@ \crcr #1\math@cr@@@ }}
                                                   \restorecounters@ \if@fleq...
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -580,10 +583,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./abstract-algebra.tex:272: Missing $ inserted.
+./abstract-algebra.tex:273: Missing $ inserted.
 <inserted text> 
                 $
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -591,31 +594,31 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Display math should end with $$.
+./abstract-algebra.tex:273: Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-./abstract-algebra.tex:272: LaTeX Error: Bad math environment delimiter.
+./abstract-algebra.tex:273: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./abstract-algebra.tex:272: Missing \endgroup inserted.
+./abstract-algebra.tex:273: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -623,10 +626,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -635,23 +638,23 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./abstract-algebra.tex:272: LaTeX Error: \begin{proof} on input line 251 ended 
+./abstract-algebra.tex:273: LaTeX Error: \begin{proof} on input line 252 ended 
 by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./abstract-algebra.tex:272: Missing $ inserted.
+./abstract-algebra.tex:273: Missing $ inserted.
 <inserted text> 
                 $
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -659,10 +662,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -670,10 +673,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -681,35 +684,35 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Missing \cr inserted.
+./abstract-algebra.tex:273: Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I'm guessing that you meant to end an alignment here.
 
-./abstract-algebra.tex:272: Missing { inserted.
+./abstract-algebra.tex:273: Missing { inserted.
 <inserted text> 
                 {
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-./abstract-algebra.tex:272: Missing { inserted.
+./abstract-algebra.tex:273: Missing { inserted.
 <inserted text> 
                 {
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-./abstract-algebra.tex:272: Extra }, or forgotten $.
+./abstract-algebra.tex:273: Extra }, or forgotten $.
 <recently read> }
                  
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -717,19 +720,19 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./abstract-algebra.tex:272: Missing number, treated as zero.
+./abstract-algebra.tex:273: Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./abstract-algebra.tex:272: Illegal unit of measure (pt inserted).
+./abstract-algebra.tex:273: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -738,18 +741,18 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./abstract-algebra.tex:272: Missing $ inserted.
+./abstract-algebra.tex:273: Missing $ inserted.
 <inserted text> 
                 $
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./abstract-algebra.tex:272: Missing } inserted.
+./abstract-algebra.tex:273: Missing } inserted.
 <inserted text> 
                 }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -758,14 +761,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (109.11652pt too wide) in alignment at lines 272--272
+Overfull \hbox (109.11652pt too wide) in alignment at lines 273--273
 [] []
  []
 
-./abstract-algebra.tex:272: Misplaced \cr.
+./abstract-algebra.tex:273: Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -773,31 +776,31 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./abstract-algebra.tex:272: Misplaced \noalign.
+./abstract-algebra.tex:273: Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-./abstract-algebra.tex:272: Misplaced \noalign.
+./abstract-algebra.tex:273: Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (109.11652pt too wide) detected at line 272
+Overfull \hbox (109.11652pt too wide) detected at line 273
 []
  []
 
-./abstract-algebra.tex:272: Extra }, or forgotten \endgroup.
+./abstract-algebra.tex:273: Extra }, or forgotten \endgroup.
 \endgather ->\math@cr \black@ \totwidth@ \egroup 
                                                  $$\ignorespacesafterend 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -806,23 +809,23 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-./abstract-algebra.tex:272: LaTeX Error: \begin{flushleft} on input line 69 end
+./abstract-algebra.tex:273: LaTeX Error: \begin{flushleft} on input line 70 end
 ed by \end{gather*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./abstract-algebra.tex:272: Missing $ inserted.
+./abstract-algebra.tex:273: Missing $ inserted.
 <inserted text> 
                 $
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -830,59 +833,59 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:272: Display math should end with $$.
+./abstract-algebra.tex:273: Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.272 \end{gather*}
+l.273 \end{gather*}
                    
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-./abstract-algebra.tex:273: LaTeX Error: \begin{document} ended by \end{proof}.
+./abstract-algebra.tex:274: LaTeX Error: \begin{document} ended by \end{proof}.
 
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.273 \end{proof}
+l.274 \end{proof}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./abstract-algebra.tex:273: Extra \endgroup.
+./abstract-algebra.tex:274: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.273 \end{proof}
+l.274 \end{proof}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--320
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
 [6]
 
-./abstract-algebra.tex:348: LaTeX Error: There's no line here to end.
+./abstract-algebra.tex:349: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.348 A
+l.349 A
        ny other groups of order 4 will have a bijection to either $\mathbb{Z...
 
 Your command was ignored.
@@ -890,119 +893,61 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
-
-./abstract-algebra.tex:366: Missing $ inserted.
-<inserted text> 
-                $
-l.366 ... then, you can find a bijection $\phi$(G_
-                                                  {1}) =  G_{2}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./abstract-algebra.tex:367: LaTeX Error: Command \end{claim} invalid in math mo
-de.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.367 \end{claim}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./abstract-algebra.tex:367: LaTeX Error: Something's wrong--perhaps a missing \
-item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.367 \end{claim}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./abstract-algebra.tex:367: LaTeX Error: Something's wrong--perhaps a missing \
-item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.367 \end{claim}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 ./abstract-algebra.tex:367: Missing $ inserted.
 <inserted text> 
                 $
-l.367 \end{claim}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./abstract-algebra.tex:370: Missing $ inserted.
-<inserted text> 
-                $
-l.370 ... then, you can find a bijection $\phi$(G_
+l.367 ... then, you can find a bijection $\phi$(G_
                                                   {1}) =  G_{2}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./abstract-algebra.tex:371: LaTeX Error: Command \end{claim} invalid in math mo
+./abstract-algebra.tex:368: LaTeX Error: Command \end{claim} invalid in math mo
 de.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.371 \end{claim}
+l.368 \end{claim}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./abstract-algebra.tex:371: LaTeX Error: Something's wrong--perhaps a missing \
+./abstract-algebra.tex:368: LaTeX Error: Something's wrong--perhaps a missing \
 item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.371 \end{claim}
+l.368 \end{claim}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./abstract-algebra.tex:371: LaTeX Error: Something's wrong--perhaps a missing \
+./abstract-algebra.tex:368: LaTeX Error: Something's wrong--perhaps a missing \
 item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.371 \end{claim}
+l.368 \end{claim}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./abstract-algebra.tex:371: Missing $ inserted.
+./abstract-algebra.tex:368: Missing $ inserted.
 <inserted text> 
                 $
-l.371 \end{claim}
+l.368 \end{claim}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1010,21 +955,80 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+./abstract-algebra.tex:374: Missing } inserted.
+<inserted text> 
+                }
+l.374 ...then $|a| = \frac{n}{(a,n)}$\end{theorem}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-./abstract-algebra.tex:374: LaTeX Error: \begin{definition} on input line 372 e
-nded by \end{flushleft}.
+
+./abstract-algebra.tex:378: LaTeX Error: \mathbb allowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.374 \end{flushleft}
+l.378 \begin{claim}{\mathbb
+                           {Z}_{n}$ is a cyclic group} \end{claim}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./abstract-algebra.tex:378: Missing $ inserted.
+<inserted text> 
+                $
+l.378 \begin{claim}{\mathbb{Z}_
+                               {n}$ is a cyclic group} \end{claim}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./abstract-algebra.tex:385: Undefined control sequence.
+l.385 If $a\inG
+               $ has order $n$, we call $a$ a generator of $G$ and we write ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./abstract-algebra.tex:388: LaTeX Error: \begin{proof} on input line 376 ended 
+by \end{flushleft}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.388 \end{flushleft}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[7] (./abstract-algebra.aux) ) 
+
+./abstract-algebra.tex:389: LaTeX Error: \begin{definition} on input line 371 e
+nded by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.389 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[7] (./abstract-algebra.aux) )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 371 (\begingroup)
+### semi simple group (level 1) entered at line 369 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
  2246 strings out of 492616
  28307 string characters out of 6128982
@@ -1032,30 +1036,30 @@ Here is how much of TeX's memory you used:
  6153 multiletter control sequences out of 15000+600000
  12176 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,13n,28p,320b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvi
-ps/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.
-pfb>
-Output written on abstract-algebra.pdf (7 pages, 185030 bytes).
+ 27i,13n,28p,397b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm
+-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on abstract-algebra.pdf (7 pages, 196810 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
