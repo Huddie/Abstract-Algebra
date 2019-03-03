@@ -1,4 +1,5 @@
 \documentclass{article}
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
 
 % Packages
 \usepackage[utf8]{inputenc}
@@ -121,6 +122,7 @@ Now that we have proved that a congruence is an $ER$ on $S = \mathbb{Z}$ we woul
 \newline
 \newline
 \Example Take $n = 5$, given the following values for $a$ which values in $\mathbb{Z}$ satisfy the congruence $a \equiv \text{b (mod n)}$ and is the resulting set equal to $\mathbb{Z}$?
+\TheSolution 
 \begin{itemize}
      \item $a = 0$
      \item $a = 1$
@@ -143,20 +145,19 @@ A partition of a set S is a collection of \textbf{non-empty, disjoint} subsets $
 
 \end{definition}
 \begin{theorem}{The equivalence classes of a set S under \char`\~ form a partition of S}
-\begin{proof}{
+\end{theorem}
+\begin{proof}{}
 We need to show that given \char`\~, we are left with a collection of \textbf{disjoint} subsets who's union is S.
 
 Let a \char`\~ S. We know a is in  its own set because a \char`\~ a. So $\forall$ a $\in$ S the set containing a is \textbf{non-empty}. If we do this for all a $\in$ S then the union of those sets is S. So we need only show that these sets are \textbf{disjoint}.
-}
 \end{proof}
-\end{theorem}
 
 \Example Let S = $\mathbb{Z}x\mathbb{Z}$ [(a, b) a,b $\in$ $\mathbb{Z}$]
 Define $\char`\~$ on S by (a, b) $\char`\~$ (c, d) iff ad = bc
 \begin{enumerate}
   \item Prove $\char`\~$ is an ER
   \item What partition of $\mathbb{R}x\mathbb{R}$ does this impose
-\end{enumerate}
+\end{enumerate}\\
 \TheSolution 
 \begin{proof}
 If ER, 3 properties must hold:
@@ -196,6 +197,7 @@ This partition forms all rational numbers. The first set represents $\frac{1}{1}
 \begin{theorem}{Division Algorithm}\\
 Let D $\in$ $\mathbb{Z+}$, a $\in$ $\mathbb{Z}$, $\exists !$q, r s.t. $a = dq + r$ when $0 < r \leq d$
 \end{theorem}
+
 \Example a = 100, d = 7\newline\\
 \TheSolution
 \begin{gather*} 
@@ -205,7 +207,7 @@ Let D $\in$ $\mathbb{Z+}$, a $\in$ $\mathbb{Z}$, $\exists !$q, r s.t. $a = dq + 
 \end{gather*} 
 So, 1 would be the GCD.
 
-\section{Chapter 1: Groups}
+\section{Groups}
 \begin{definition}{Binary Operation}
 We define a binary operation on set S is a function from SxS $\longrightarrow$ S\\
 ie: Takes a pair of elements in S and sends them to another element in S
@@ -231,6 +233,8 @@ G is a group if the following hold:
 \end{definition}
 \Example $\mathbb{Z}_{n}$ = the group \{0, 1, 2, $\dots$, n-1\} under addition mod n.\\
 What is addition mod n?\newline \\
+
+\TheSolution 
 For a, b $\in \mathbb{Z}_{n}$:  \\
 if $a + b < n$, $a + b = a + b$ \\
 if $a + b \geq n$, $a + b = a + b - n$\newline\\
@@ -293,6 +297,8 @@ Properties that may be derived from a cayley table are:
 \end{definition}
 
 \Example Write the Cayley Table for $\mathbb{Z}_{3}$\\
+
+\TheSolution 
  \begin{center}
 \setlength\extrarowheight{3pt}
 \begin{tabular}{c | c c c c c}
@@ -305,6 +311,8 @@ Properties that may be derived from a cayley table are:
 \end{center}
 
 \Example Write the Cayley Table for $|G|=3$\\
+
+\TheSolution 
  \begin{center}
 
 \setlength\extrarowheight{3pt}
@@ -350,7 +358,7 @@ Any other groups of order 4 will have a bijection to either $\mathbb{Z}_{4}$ or 
 Here is an example of one of those:
 
 \Example Let G = \{1, -1, i, -i\} under *\\
-
+ 
 \begin{center}
 \setlength\extrarowheight{3pt}
 \begin{tabular}{c | c c c c c c}
@@ -366,10 +374,14 @@ Here is an example of one of those:
 \begin{claim}{}
 If groups are structurally identical, then, you can find a bijection $\phi$(G_{1}) =  G_{2}
 \end{claim}
+
 \begin{definition}{Order of an element}\\
 Let $G$ be a group with g $\in$ $G$. The order of g (referred to as the order of the element) is the smallest positive integer n s.t. $g^{n} = e$ where e is the identify element of $G$. 
+\end{definition}
+
 \begin{definition}{Cyclic Group}\\
 Let $G$ be a group with order $n$. We say $G$ is cyclic if $\exists g \in G$ s.t $|g|=n$
+\end{definition}
 
 \begin{theorem}{Let a $\in  \mathbb{Z}_{n}$, then $|a| = \frac{n}{(a,n)}$\end{theorem}
 
@@ -377,13 +389,48 @@ Let $G$ be a group with order $n$. We say $G$ is cyclic if $\exists g \in G$ s.t
 
 \begin{claim}{\mathbb{Z}_{n}$ is a cyclic group} \end{claim}
 
-\begin{proof}{We know  $\mathbb{Z}_{n}$ is cyclic if $\exists$ some a s.t. $|a| = n$ where $n = |G|$ by the proof above (Them. 3), $|a| = \frac{n}{(a,n)}$ $\therefore$ $(a, n) = 1$. To prove that $\mathbb{Z}_{n}$ is cyclic we must show that $\exists$ an a such that $(a, n) = 1$\\We will choose $n-1$ as our $a$ giving us $(n-1, n) = 1$ which is always true}
+\begin{proof}{
+
+We know  $\mathbb{Z}_{n}$ is cyclic if $\exists$ some a s.t. $|a| = n$ where $n = |G|$ by the proof above (Them. 3), $|a| = \frac{n}{(a,n)}$$\therefore$ $(a, n) = 1$. 
+
+To prove that $\mathbb{Z}_{n}$ is cyclic we must show that $\exists$ an a such that $(a, n) = 1$\\We will choose $n-1$ as our $a$ giving us $(n-1, n) = 1$ which is always true}
+
 \end{proof}
 
 \begin{definition}{Group Generator}\\
 Let $G$ be a cyclic group of order $n$.\\
 If $a\inG$ has order $n$, we call $a$ a generator of $G$ and we write $<a> = G$ . We say "the group generated by a"
 \end{definition}
+
+\begin{claim}{Every element $a \in \mathbb{Z}_{n}$ that is relatively prime to $n$ ($gcd(a, n) = 1$) is a generator} \end{claim}
+
+\begin{definition}{$\mathbb{U}_{n}$}\\
+$\mathbb{U}_{n}$ is defined as all elements in $\mathbb{Z}_{n}$ that are relatively prime to $n$ ($gcd(a, n) = 1$)
+\end{definition}
+
+\begin{theorem}{All cyclic groups are Abelian}\end{theorem}
+\begin{proof}{
+
+We must show that in cyclic group G, every 2 elements commute.
+
+Since G is cyclic $\exists$ $a$ $\in$ $G$ $s.t$ $<a> = G$.
+
+Take 2 $distinct$ elements $\in$ $G$, call them $g_{1}$ and  $g_{2}$.
+
+\begin{center}
+$g_{1} = a^{x}$ for some x
+
+$g_{2} = a^{y}$ for some y
+\end{center}
+
+We can write $g_{1}g_{2} = g_{2}g_{1} = a^{x}a^{y} = a^{y}a^{x} = a^{x+y} = a^{y+x}$
+
+This final step ($a^{x+y} = a^{y+x}$) is valid because $x$ and $y$ are integers!
+
+
+}
+\end{proof}
+
 
 \end{flushleft}
 \end{document}
