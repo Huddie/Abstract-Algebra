@@ -18,24 +18,8 @@
 \newcounter{solution}
 \setcounter{secnumdepth}{4}
 
-% Styles
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
-
 \theoremstyle{claim}
 \newtheorem{claim}{Claim}[section]
- 
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-
-\theoremstyle{theorem}
-\newtheorem{theorem}{Theorem}
-
-\titleformat{\paragraph}
-{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-
 
 % Commands
 
@@ -59,54 +43,46 @@
   \textbf{Solution \thesolution:}\\%
 }
 
-
 \title{Abstract Structures 333}
-
 \begin{document}
-
 \maketitle
 
 % Flush left to keep starting point
 % of all lines flush (Design pref.)
-\begin{flushleft}
 
 \section{Equivalence Relations}
 \begin{definition}{Equivalence Relation}
-
-An equivalence relation, denoted by the symbol \char`\~ , on a set $\Huge S$ is a set $\Huge R$
-\footnote{Need not be unique}
+An equivalence relation, denoted by the symbol \char`\~ , on a set $\Huge S$ is a set $\Huge R$\footnote{Need not be unique}
 of ordered pairs (a, b) $\in$ S x S such that:
+
 \begin{enumerate}
   \item (a, a) $\in$ R $\forall$ a $\in$ S
   \item (a, b) $\in$ R implies (b, a) $\in$ R $\forall$ a, b $\in$ S
   \item (a, b), (b, c) $\in$ R implies (a, c) $\in$ R $\forall$ a, b, c $\in$ S
 \end{enumerate}
-\end{definition}
-
-We are concerned with \textbf{what partition is R imposing on S}
-\newline
-\newline
-
-\Example Define $\mathbb{Z}$ in the following way\\ $\newline$ Fix n $\in$ $\mathbb{Z+}$ $\newline$\\ We say a is congruent $\equiv$ to b (mod n) or $a \equiv \text{b (mod n)}$ iff n $\mid$ (a-b)
-
+\end{definition}\\
+Every Equivalence Relation $\Huge R$, imposes a partition on $\Huge S$\\\\
+\Example Define $\mathbb{Z}$ in the following way:\\
+Fix n $\in$ $\mathbb{Z+}$ 
+$a \equiv b \mod n \iff n \mid (a-b)$\\\\
 Show that the example above is an equivalence relation
-\newline \newline
+
 \TheSolution 
 \begin{proof}{}
 We must prove the following 3 properties
 \begin{enumerate}
-  \item Reflexive [ ($\romannum{1}$) in the def of ER]
+  \item $\bold{Reflexive}$ [ ($\romannum{1}$) in the def of $ER$]
   \begin{itemize}
      \item Thought of as: An element a is always related (\char`\~) to itself.
    \end{itemize}
-   We are trying to prove that $a \equiv\text{a (mod n)}$. We can start by rewriting this congruence as $n \mid (a-a)$ by def of congruence. This leaves us with $n \mid (0)$ which is true for all $n > 0$. Since n be def is fixed in $\mathbb{Z+}$, this congruence will always hold.
-  \item Symmetric [ ($\romannum{2}$) in the def of ER]
+   We are trying to prove that $a \equiv a \mod n$. We can start by rewriting this congruence as $n \mid (a-a)$ by def of congruence. This leaves us with $n \mid (0)$ which is true for all $n > 0$. Since n be def is fixed in $\mathbb{Z+}$, this congruence will always hold.
+  \item $\bold{Symmetric}$ [ ($\romannum{2}$) in the def of $ER$]
     \begin{itemize}
      \item Thought of as: Given $(a, b)$ is valid, we can show $(b, c)$ is valid.
     \end{itemize}
-   Since we are given $(a, b)$ is valid, we can write $a \equiv \text{b (mod n)}$ or $n \mid (a-b)$. We must show that $b \equiv a (mod n)$ or $n \mid (b-a)$.
+   Since we are given $(a, b)$ is valid, we can write $a \equiv b \mod n$ or $n \mid a-b$. We must show that $b \equiv a \mod n$ or $n \mid (b-a)$.
    We can rewrite $n \mid (b-a)$ as $-1 * n \mid (a-b)$. Since we know $n \mid (a-b)$ from out given, we know that this division holds true and therefore $n \mid (b-a)$ as well. 
-  \item Transitive [ ($\romannum{3}$) in the def of ER]
+  \item $\bold{Transitive}$ [ ($\romannum{3}$) in the def of $ER$]
     \begin{itemize}
      \item Thought of as: Given $a \char`\~ b$ and $b \char`\~ c$ we must show $a \char`\~ c$.
    \end{itemize}
@@ -121,22 +97,14 @@ We must prove the following 3 properties
 Now that we have proved that a congruence is an $ER$ on $S = \mathbb{Z}$ we would like to see what affect it has on $\mathbb{Z}$. $ie:$ What is $a \char`\~ b$ / what partition does it impose.
 \newline
 \newline
-\Example Take $n = 5$, given the following values for $a$ which values in $\mathbb{Z}$ satisfy the congruence $a \equiv \text{b (mod n)}$ and is the resulting set equal to $\mathbb{Z}$?
+\Example Take $n = 5$, given the following values for $a$ which values in $\mathbb{Z}$ satisfy the congruence $a \equiv b \mod n$ and is the resulting set equal to $\mathbb{Z}$?
 \TheSolution 
 \begin{itemize}
-     \item $a = 0$
-     \item $a = 1$
-     \item $a = 2$
+     \item $a = 0 = \{\pm{0}, \pm{5}, \pm{10}\dots\}$
+     \item $a = 1 = \{\pm{1}, \pm{6}, \pm{5k+1}\dots\}$
+     \item $a = 2$ = \{\pm{2}, \pm{7}, \pm{5k+2}\dots\}$
 \end{itemize}
-\TheSolution 
-\begin{itemize}
-     \item $\{\pm{0}, \pm{5}, \pm{10}\dots\}$
-     \item $\{\pm{1}, \pm{6}, \pm{5k+1}\dots\}$
-     \item $\{\pm{2}, \pm{7}, \pm{5k+2}\dots\}$
-\end{itemize}
-No sets equal $\mathbb{Z}$
-\newline
-\newline
+No sets by themselves equal $\mathbb{Z}$ but together (along with $a = 3, 4$) they do.
 We can see that it appears that a congruence will always split the set $\mathbb{Z}$ into n partitions.
 \newline
 \begin{definition}{Partition of a set}
@@ -144,16 +112,15 @@ We can see that it appears that a congruence will always split the set $\mathbb{
 A partition of a set S is a collection of \textbf{non-empty, disjoint} subsets $\{s_{0}, s_{1}, \dots\}$ such that (st) $\bigcup\limits_{i=1}^{\infty} S_{i} = S$
 
 \end{definition}
-\begin{theorem}{The equivalence classes of a set S under \char`\~ form a partition of S}
+\begin{theorem}{The equivalence classes of a set S under \char`\~ form a partition of  $\Huge S$}
 \end{theorem}
 \begin{proof}{}
-We need to show that given \char`\~, we are left with a collection of \textbf{disjoint} subsets who's union is S.
-
-Let a \char`\~ S. We know a is in  its own set because a \char`\~ a. So $\forall$ a $\in$ S the set containing a is \textbf{non-empty}. If we do this for all a $\in$ S then the union of those sets is S. So we need only show that these sets are \textbf{disjoint}.
+We need to show that given \char`\~, we are left with a collection of \textbf{disjoint} subsets who's union is  $\Huge S$.\\
+Let a \char`\~   $\Huge S$. We know $a$ is in  its own set because a \char`\~ $a$. So $\forall$ $a$ $\in$  $\Huge S$ the set containing a is \textbf{non-empty}. If we do this for all $a$ $\in$ $\Huge S$ then the union of those sets is S. So we need only show that these sets are \textbf{disjoint}.
 \end{proof}
 
-\Example Let S = $\mathbb{Z}x\mathbb{Z}$ [(a, b) a,b $\in$ $\mathbb{Z}$]
-Define $\char`\~$ on S by (a, b) $\char`\~$ (c, d) iff ad = bc
+\Example Let  $\Huge S$ = $\mathbb{Z}x\mathbb{Z}$ [(a, b) a,b $\in$ $\mathbb{Z}$]
+Define $\char`\~$ on  $\Huge S$ by $(a, b)$ $\char`\~$ (c, d) \iff $ad = bc$
 \begin{enumerate}
   \item Prove $\char`\~$ is an ER
   \item What partition of $\mathbb{R}x\mathbb{R}$ does this impose
@@ -162,10 +129,9 @@ Define $\char`\~$ on S by (a, b) $\char`\~$ (c, d) iff ad = bc
 \begin{proof}
 If ER, 3 properties must hold:
 \begin{enumerate}
-  \item Reflexive: (a, b) $\char`\~$ (a, b) $\Longrightarrow$ ab = ab which is true.
-  \item Symmetric: Given (a, b) $\char`\~$ (c, d) we can show (c, d) $\char`\~$ (a, b). (a, b) $\char`\~$ (c, d) $\Longrightarrow$ ad = bc, (c, d) $\char`\~$ (a, b) $\Longrightarrow$ cb = da. Since we are in the realm of $\mathbb{R}$ we can rearrange to bc = ad which is equal to ad = bc.
-  \item Transitive: We must show that if (a, b) $\char`\~$ (c, d) and (c, d) $\char`\~$ (e, f) then (a, b) $\char`\~$ (e, f). We can write it as follows ad = bc and cf = de  the af = be.
-  We can write 
+  \item Reflexive: $(a, b)$ $\char`\~$ $(a, b)$ $\Longrightarrow$ ab = ab which is true.
+  \item Symmetric: Given $(a, b$) $\char`\~$ $(c, d)$ we can show ($c, d)$ $\char`\~$ $(a, b)$. $(a, b)$ $\char`\~$ (c, d) $\Longrightarrow$ $ad = bc$, $(c, d)$ $\char`\~$ (a, b) $\Longrightarrow$ $cb = da$. Since we are in the realm of $\mathbb{R}$ we can rearrange to $bc = ad$ which is equal to $ad = bc$.
+  \item Transitive: We must show that if $(a, b)$ $\char`\~$ $(c, d)$ and $(c, d)$ $\char`\~$ $(e, f)$ then $(a, b)$ $\char`\~$ $(e, f)$. We can write it as follows $ad = bc$ and $cf = de$  the $af = be$. What follows is
   \begin{gather*} 
   adcf = bcde   \\
   ace = bce     \\
@@ -178,7 +144,7 @@ To find the partition we may start by plugging in random values.\\
 1d = 1c \\
 d = c   \\
 = \{(1, 1), (2, 2), \dots, (n, n)\}
-\end{gather*}\\
+\end{gather*}
 \begin{gather*} 
 (1, 2)\\
 d = 2c\\
@@ -208,21 +174,24 @@ Let D $\in$ $\mathbb{Z+}$, a $\in$ $\mathbb{Z}$, $\exists !$q, r s.t. $a = dq + 
 So, 1 would be the GCD.
 
 \section{Groups}
+
 \begin{definition}{Binary Operation}
 We define a binary operation on set S is a function from SxS $\longrightarrow$ S\\
 ie: Takes a pair of elements in S and sends them to another element in S
 \end{definition}
 \Example Let S = $\mathbb{Z}$, with bin-op (+)\\
-a + b = c   \\
-3 + 5 = 8   \\
-3 $\in$ $\mathbb{Z}$, 5 $\in$ $\mathbb{Z}$, 8 $\in$ $\mathbb{Z}$.
+a + b = c\\
+3 + 5 = 8\\
+3 $\in$ $\mathbb{Z}$, 5 $\in$ $\mathbb{Z}$, 8 $\in$ $\mathbb{Z}$.\\
 
 \begin{definition}{Let S be a set w/ bin-op $*$\footnote{$*$ denotes any bin-op}}\\
 If $\forall$ a, b $\in$ S, a + b $\in$ S we say S is closed (under $*$)
 \end{definition}
-\Example                            \\
-($M_{22}$, $\cdot$) is closed       \\
+
+\Example\\
+($M_{22}$, $\cdot$) is closed \\
 ($\mathbb{R}$, $\div$) is not closed\\
+
 \begin{definition}{Let G be a set closed under bin-op *}
 G is a group if the following hold:
 \begin{enumerate}
@@ -232,15 +201,15 @@ G is a group if the following hold:
 \end{enumerate}
 \end{definition}
 \Example $\mathbb{Z}_{n}$ = the group \{0, 1, 2, $\dots$, n-1\} under addition mod n.\\
-What is addition mod n?\newline \\
+What is addition mod n?\\
 
 \TheSolution 
-For a, b $\in \mathbb{Z}_{n}$:  \\
+For a, b $\in \mathbb{Z}_{n}$:\\
 if $a + b < n$, $a + b = a + b$ \\
-if $a + b \geq n$, $a + b = a + b - n$\newline\\
+if $a + b \geq n$, $a + b = a + b - n$\\
 
 \begin{enumerate}
-  \item Associative: We are dealing with integers so associativity holds.
+  \item Associative: We are dealing with integers so associativity holds (inherited)
   \item $\exists$ an Identity: The identity is 0 ($e = 0$) 
   \item ($\forall$ a $\in$ G)$\exists a^{-1}$: The inverse is $n - a$
 \end{enumerate}
@@ -255,7 +224,7 @@ if $a + b \geq n$, $a + b = a + b - n$\newline\\
 
 \begin{proof} of  ($GL_{2R}$, *)\\
   We know from linear algebra that $det(AB) = det(A)det(B)$\\
-  We also know that the identity 2x2 matrix is 
+  We also know that the identity 2x2 matrix is:
   \[
 M_{2x2}=
   \begin{bmatrix}
@@ -266,7 +235,6 @@ M_{2x2}=
 Additionally, we are able to inherit associativity from general matrices. 
 This leaves inverse.\\
 We prove inverse as follows:
-\begin{gather*} 
 A^{-1} = \frac{1}{det(A)} 
 \[
     \begin{bmatrix}
@@ -274,8 +242,7 @@ A^{-1} = \frac{1}{det(A)}
       -c & a
     \end{bmatrix}
 \]
-\end{gather*} 
-\end{proof}
+\end{proof}\\
 
 \begin{definition}{Order of a  group}\\
 The order of a group, G, denoted $| G |$ is the number of elements in G as a set\\
@@ -283,7 +250,7 @@ If set G has a finite number of elements we say G is a finite group. If G has an
 \end{definition}
 
 \begin{definition}{Abelian Groups}\\
-If a group is commutative, we say it is Abelian. If not, we say its not-Abelian
+If a group is commutative, we say it is Abelian. If not, we say its not-Abelian. More formally, $\forall (a, b) \in G$, We call $G$ Abelian \iff $ab = ba$
 \end{definition}
 
 \begin{definition}{Cayley Table}\\
@@ -373,21 +340,23 @@ Here is an example of one of those:
 
 \begin{claim}{}
 If groups are structurally identical, then, you can find a bijection $\phi$(G_{1}) =  G_{2}
-\end{claim}
+\end{claim}\\
 
 \begin{definition}{Order of an element}\\
 Let $G$ be a group with g $\in$ $G$. The order of g (referred to as the order of the element) is the smallest positive integer n s.t. $g^{n} = e$ where e is the identify element of $G$. 
 \end{definition}
 
 \begin{definition}{Cyclic Group}\\
-Let $G$ be a group with order $n$. We say $G$ is cyclic if $\exists g \in G$ s.t $|g|=n$
+Let $G$ be a group with order $n$. We say $G$ is cyclic if $\exists$ g $\in G$ s.t $|g|=n$
 \end{definition}
 
 \begin{theorem}{Let a $\in  \mathbb{Z}_{n}$, then $|a| = \frac{n}{(a,n)}$\end{theorem}
 
 \begin{proof}{$|a|$ is the smallest positive integer $k$ s.t. $ka  \equiv 0 (n)$\\i.e $ln-ka = 0$\\Solve for k using linear diophantine equation}
 
-\begin{claim}{\mathbb{Z}_{n}$ is a cyclic group} \end{claim}
+\begin{claim}{
+\mathbb{Z}_{n}$ is a cyclic group} 
+\end{claim}\\
 
 \begin{proof}{
 
@@ -402,7 +371,9 @@ Let $G$ be a cyclic group of order $n$.\\
 If $a\inG$ has order $n$, we call $a$ a generator of $G$ and we write $<a> = G$ . We say "the group generated by a"
 \end{definition}
 
-\begin{claim}{Every element $a \in \mathbb{Z}_{n}$ that is relatively prime to $n$ ($gcd(a, n) = 1$) is a generator} \end{claim}
+\begin{claim}{
+Every element $a \in \mathbb{Z}_{n}$ that is relatively prime to $n$ ($gcd(a, n) = 1$) is a generator} 
+\end{claim}\\
 
 \begin{definition}{$\mathbb{U}_{n}$}\\
 $\mathbb{U}_{n}$ is defined as all elements in $\mathbb{Z}_{n}$ that are relatively prime to $n$ ($gcd(a, n) = 1$)
@@ -430,7 +401,4 @@ This final step ($a^{x+y} = a^{y+x}$) is valid because $x$ and $y$ are integers!
 
 }
 \end{proof}
-
-
-\end{flushleft}
 \end{document}
